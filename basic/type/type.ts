@@ -73,3 +73,19 @@ Directions.Down // 1
 Directions.Left // 10
 Directions.Right // 11
 
+//NeverType====================================================================================================
+
+// Function return Error
+const msg = 'abc'
+const error = (msg: string): never => {
+    throw new Error(msg)
+}
+
+// Function infinite loop
+const infiniteLoop = (): never => {
+    while (true) {
+
+    }
+}
+
+
