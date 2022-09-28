@@ -59,3 +59,17 @@ notSure = true // boolean
 notSure = 10 // number
 notSure = 'abc' // string
 
+//EnumType====================================================================================================
+
+enum Directions {
+    Up,
+    Down,
+    Left = 10,
+    Right,
+}
+
+Directions.Up // 0
+Directions.Down // 1
+Directions.Left // 10
+Directions.Right // 11
+
