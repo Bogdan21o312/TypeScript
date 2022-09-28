@@ -20,3 +20,9 @@ const string2: string = `cba ${a}`
 
 const u: undefined = undefined
 const n: null = null
+
+//VoidType====================================================================================================
+
+const v = (): void => {
+
+}
