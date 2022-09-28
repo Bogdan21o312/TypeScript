@@ -32,3 +32,12 @@ const v = (): void => {
 let list: number[] = [1, 2, 3]
 
 let list2: Array<number> = [1, 2, 3]
+
+//TupleType====================================================================================================
+
+// Multi line
+let x: [string, number]
+x = ["Hello", 10]
+
+// One line
+let y: [string, number] = ["Hello", 10]
