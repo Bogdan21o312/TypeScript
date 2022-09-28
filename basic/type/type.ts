@@ -88,4 +88,17 @@ const infiniteLoop = (): never => {
     }
 }
 
+//ObjectType====================================================================================================
+
+const create = (o: object | null): void => { }
+
+// create(1)
+// create('abc')
+create({obg: 1})
+
+let id: number | string
+
+id = 10
+id = 'abc'
+// id = true
 
