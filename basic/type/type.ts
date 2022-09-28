@@ -41,3 +41,21 @@ x = ["Hello", 10]
 
 // One line
 let y: [string, number] = ["Hello", 10]
+
+//AnyType====================================================================================================
+
+// Any type for array
+
+const p: [any, any] = ["Hello", 10]
+const m: Array<any> = ["Hello", 10]
+
+// Any type for string
+
+let notSure: any = false;
+
+// Issue case (no error)
+
+notSure = true // boolean
+notSure = 10 // number
+notSure = 'abc' // string
+
