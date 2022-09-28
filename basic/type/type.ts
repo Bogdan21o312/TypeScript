@@ -16,3 +16,7 @@ const b: number = 6.1
 const string: string = 'abc'
 const string2: string = `cba ${a}`
 
+//Null & Undefined Types====================================================================================================
+
+const u: undefined = undefined
+const n: null = null
