@@ -73,6 +73,21 @@ Directions.Down // 1
 Directions.Left // 10
 Directions.Right // 11
 
+Directions[0] // 0
+Directions[1] // 1
+Directions[10] // 10
+Directions[11] // 11
+
+enum links {
+    google = 'https://www.google.com.ua/',
+    apple = 'https://www.apple.com',
+    twitter = 'https://twitter.com/'
+}
+
+links.apple
+links.google
+links.twitter
+
 //NeverType====================================================================================================
 
 // Function return Error
