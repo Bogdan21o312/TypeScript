@@ -1,12 +1,7 @@
 import React, {FC} from 'react';
+import {Todo} from "../@types";
 
-interface TodoItemProps {
-    id: string | number,
-    title: string,
-    completed: boolean,
-}
-
-const TodoItem: FC<TodoItemProps> = ({ id, title, completed }) => {
+const TodoItem: FC<Todo> = ({ id, title, completed }) => {
 
     return (
         <li>
