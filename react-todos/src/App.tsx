@@ -1,9 +1,10 @@
 import React from 'react';
+import TodoItem from "./components/TodoItem";
 
 function App() {
   return (
     <div>
-        test
+        <TodoItem title={'fkdlsalkfs'} id={1} completed={true}/>
     </div>
   );
 }
