@@ -28,3 +28,8 @@ export type GithubUser = {
   following: number,
   created_at: string,
 }
+
+export type GithubError = {
+  message: string,
+  documentation_url: string,
+}
