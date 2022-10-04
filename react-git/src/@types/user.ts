@@ -1,4 +1,4 @@
-export type LocalGithubUser = {
+export type LocalGitHubUser = {
   login: string,
   avatar: string,
   name: string,
@@ -13,7 +13,7 @@ export type LocalGithubUser = {
   created: string,
 }
 
-export type GithubUser = {
+export type GitHubUser = {
   login: string,
   id: number,
   avatar_url: string,
@@ -29,7 +29,7 @@ export type GithubUser = {
   created_at: string,
 }
 
-export type GithubError = {
+export type GitHubError = {
   message: string,
   documentation_url: string,
 }
