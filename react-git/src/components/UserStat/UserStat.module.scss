@@ -15,7 +15,6 @@
 .userStat {
   background-color: var(--stat-bg);
   color: var(--stat-color);
-  padding: 15px 32px;
   @include adaptiveValue("padding-top", 15, 10);
   @include adaptiveValue("padding-bottom", 15, 10);
   @include adaptiveValue("padding-right", 32, 16);
