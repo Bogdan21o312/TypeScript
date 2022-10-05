@@ -1,25 +1,19 @@
+@use "sass:math";
+
 @import "src/assets/style/Style.module";
 
-:global {
-  body[data-theme='light'] {
-    color: $gray-100;
-  }
-
-  body[data-theme='dark'] {
-    color: $white;
-  }
-}
-
 .header {
-  margin: 35px 0;
+  @include adaptiveValue("margin-top", 100, 50);
+  @include adaptiveValue("margin-bottom", 50, 30);
+  @include adaptiveValue("margin-right", 40, 10);
+  @include adaptiveValue("margin-left", 40, 10);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  color: $gray-300;
-  font-size: 1.75rem;
-  line-height: 1.5;
+  @include adaptiveValue("font-size", 30, 20);
+  line-height: math.div(30, 20);
   font-weight: 700;
 }
