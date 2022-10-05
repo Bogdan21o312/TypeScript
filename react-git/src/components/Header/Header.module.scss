@@ -1,0 +1,25 @@
+@import "src/assets/style/Style.module";
+
+:global {
+  body[data-theme='light'] {
+    color: $gray-100;
+  }
+
+  body[data-theme='dark'] {
+    color: $white;
+  }
+}
+
+.header {
+  margin: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: $gray-300;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  font-weight: 700;
+}

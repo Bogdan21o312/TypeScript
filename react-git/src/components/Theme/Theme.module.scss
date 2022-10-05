@@ -1,0 +1,33 @@
+@import "src/assets/style/Style.module";
+
+:global {
+  body[data-theme='light'] {
+    background-color: $gray-50;
+    color: $gray-200;
+    fill: $gray-200;
+  }
+
+  body[data-theme='dark'] {
+    background-color: $gray-500;
+    color: $white;
+    fill: $white;
+  }
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+
+  &Text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+  }
+
+  &Icon {
+
+  }
+}
+
