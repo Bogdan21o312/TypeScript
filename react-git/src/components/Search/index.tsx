@@ -5,7 +5,7 @@ import {ReactComponent as SearchIcon} from '../../assets/img/icon-search.svg';
 
 interface SearchProps {
     hasError: boolean,
-    onSubmit?: (text: string) => void,
+    onSubmit: (text: string) => void,
 }
 
 type FormFields = {
@@ -18,7 +18,7 @@ const Index: FC<SearchProps> = ({hasError, onSubmit}) => {
         const text = event.currentTarget.username.value;
 
         if (text.trim()) {
-            // onSubmit(text);
+            onSubmit(text);
             event.currentTarget.reset();
         }
     }
