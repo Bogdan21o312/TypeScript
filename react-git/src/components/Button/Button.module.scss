@@ -6,14 +6,14 @@
   @include adaptiveValue("padding-right", 24, 16);
   @include adaptiveValue("padding-left", 24, 16);
   cursor: pointer;
-  background-color: $main-color;
-  color: $white;
+  background-color: var(--main-color);
+  color: var(--white);
   transition: all 0.3s ease 0s;
   border-radius: rem(5);
-  
+
   @media (any-hover: hover) {
     &:hover {
-      background-color: $main-color-hover;
+      background-color: var(--main-color-hover);
     }
   }
 }

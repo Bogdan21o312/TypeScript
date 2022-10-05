@@ -2,6 +2,16 @@
 
 @import "src/assets/style/Style.module";
 
+:global {
+  body[data-theme='light'] {
+    --header-color: var(--gray-300);
+  }
+
+  body[data-theme='dark'] {
+    --header-color: var(--white);
+  }
+}
+
 .header {
   @include adaptiveValue("margin-top", 100, 50);
   @include adaptiveValue("margin-bottom", 50, 30);
@@ -13,6 +23,7 @@
 }
 
 .logo {
+  color: var(--header-color);
   @include adaptiveValue("font-size", 30, 20);
   line-height: math.div(30, 20);
   font-weight: 700;

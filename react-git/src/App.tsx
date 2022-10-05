@@ -1,15 +1,13 @@
 import React from 'react';
 import Container from "./components/Container";
 import Header from "./components/Header";
-import Button from "./components/Button";
+import Search from "./components/Search";
 
 function App() {
     return (
         <Container>
             <Header/>
-            <Button>
-                Button
-            </Button>
+            <Search hasError={false}/>
         </Container>
     );
 }
