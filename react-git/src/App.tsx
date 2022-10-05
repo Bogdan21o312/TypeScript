@@ -7,7 +7,6 @@ function App() {
     return (
         <Container>
             <Header/>
-            <Search hasError={false}/>
         </Container>
     );
 }

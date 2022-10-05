@@ -1,16 +1,16 @@
 export type LocalGitHubUser = {
   login: string,
-  avatar: string,
+  avatar_url: string,
   name: string,
-  company: string,
+  company: string | null,
   blog: string,
-  location: string,
-  bio: string,
-  twitter: string,
-  repos: number,
+  location: string | null,
+  bio: string | null,
+  twitter_username: string | null,
+  public_repos: number,
   followers: number,
   following: number,
-  created: string,
+  created_at: string,
 }
 
 export type GitHubUser = {
