@@ -1,3 +1,5 @@
+@import "src/assets/style/Style.module";
+
 :global {
   body[data-theme='light'] {
     --stat-bg: var(--gray-50);
@@ -14,6 +16,10 @@
   background-color: var(--stat-bg);
   color: var(--stat-color);
   padding: 15px 32px;
+  @include adaptiveValue("padding-top", 15, 10);
+  @include adaptiveValue("padding-bottom", 15, 10);
+  @include adaptiveValue("padding-right", 32, 16);
+  @include adaptiveValue("padding-left", 32, 16);
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,17 +28,15 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  @include adaptiveValue("gap", 30, 10);
 
   &Title {
     color: var(--gray-200);
-    font-size: 0.75rem;
-    line-height: 1.5;
+    @include adaptiveValue("font-size", 30, 10);
   }
 
   &Number {
-    font-size: 1.25rem;
-    line-height: 1.5;
+    @include adaptiveValue("font-size", 40, 10);
     font-weight: 700;
   }
 }
