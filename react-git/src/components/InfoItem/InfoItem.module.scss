@@ -1,0 +1,38 @@
+@import "src/assets/style/Style.module";
+
+:global {
+  body[data-theme='light'] {
+    --info-color: var(--gray-200);
+  }
+
+  body[data-theme='dark'] {
+    --info-color: var(--white);
+  }
+}
+
+.infoItem {
+  color: var(--info-color);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: var(--info-color);
+    @include adaptiveValue("margin-right", 30, 10);
+    @include adaptiveValue("width", 20, 10);
+  }
+
+  &.empty {
+    opacity: 0.75;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: var(--info-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,8 +1,8 @@
-import UserInfo from './UserInfo';
-import {UserTitle} from './UserTitle';
+import UserInfo from '../UserInfo';
 import styles from './UserCard.module.scss';
 import UserStat from "../UserStat";
 import {LocalGitHubUser} from "../../@types/user";
+import UserTitle from "../UserTitle";
 
 interface UserCardProps extends LocalGitHubUser {
 }
@@ -16,7 +16,7 @@ const UserCard = (props: UserCardProps) => {
                 className={styles.avatar}
             />
             <UserTitle
-                created={props.created_at}
+                created_at={props.created_at}
                 login={props.login}
                 name={props.name}
             />
