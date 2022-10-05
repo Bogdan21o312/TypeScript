@@ -1,7 +1,7 @@
-import {ReactComponent as CompanyIcon} from '../../assets/icon-company.svg';
-import {ReactComponent as LocationIcon} from '../../assets/icon-location.svg';
-import {ReactComponent as TwitterIcon} from '../../assets/icon-twitter.svg';
-import {ReactComponent as BlogIcon} from '../../assets/icon-website.svg';
+import {ReactComponent as CompanyIcon} from '../../assets/img/icon-company.svg';
+import {ReactComponent as LocationIcon} from '../../assets/img/icon-location.svg';
+import {ReactComponent as TwitterIcon} from '../../assets/img/icon-twitter.svg';
+import {ReactComponent as BlogIcon} from '../../assets/img/icon-website.svg';
 import styles from './UserInfo.module.scss';
 import {LocalGitHubUser} from "../../@types/user";
 import InfoItem, {InfoItemProps} from "../InfoItem";
