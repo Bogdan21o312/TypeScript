@@ -1,0 +1,19 @@
+@import "src/assets/style/Style.module";
+
+.button {
+  @include adaptiveValue("padding-top", 15, 10);
+  @include adaptiveValue("padding-bottom", 12, 8);
+  @include adaptiveValue("padding-right", 24, 16);
+  @include adaptiveValue("padding-left", 24, 16);
+  cursor: pointer;
+  background-color: $main-color;
+  color: $white;
+  transition: all 0.3s ease 0s;
+  border-radius: rem(5);
+  
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $main-color-hover;
+    }
+  }
+}
