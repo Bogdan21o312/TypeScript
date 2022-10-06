@@ -25,21 +25,18 @@ const Index: FC<SearchProps> = ({hasError, onSubmit}) => {
     return (
         <form onSubmit={handleSubmit} autoComplete="off">
             <div className={classes.search}>
-                <label htmlFor="search" className={classes.label}>
-                    <SearchIcon/>
-                </label>
-                <input
-                    type="text"
-                    className={classes.textField}
-                    id="search"
-                    name="username"
-                    placeholder="Search GitHub username..."
-                />
-                {hasError && (
-                    <div className={classes.error}>
-                        No result
-                    </div>
-                )}
+                <div className={classes.search__content}>
+                    <label htmlFor="search" className={classes.label}>
+                        <SearchIcon/>
+                    </label>
+                    <input
+                        type="text"
+                        className={`${classes.textField} ${hasError ? classes.error : '' }`}
+                        id="search"
+                        name="username"
+                        placeholder="Search GitHub username..."
+                    />
+                </div>
                 <Button>Search</Button>
             </div>
         </form>

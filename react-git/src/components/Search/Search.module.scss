@@ -17,38 +17,36 @@
 }
 
 .search {
+  justify-content: space-between;
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 10px 10px 10px 16px;
+  @include adaptiveValue("padding", 20, 10);
   background-color: var(--search-bg, white);
   display: flex;
   align-items: center;
   box-shadow: var(--search-shadow);
-  border-radius: 15px;
-
-  @media (min-width: 767px) {
-    padding: 10px 10px 10px 30px;
-  }
-
+  border-radius: rem(15);
   &>button {
     flex-shrink: 0;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 30, 10);;
   }
 }
 
 .label {
   cursor: pointer;
+  svg {
+    max-width: 100%;
+  }
 }
 
 .textField {
-  padding: 0 10px;
-  flex-grow: 5;
-  height: 60px;
-  max-width: calc(100% - 100px - 20px);
-  border: none;
+  @include adaptiveValue("font-size", 20, 12);
   color: var(--search-color);
-  font-size: 0.75rem;
-  line-height: 1.5;
   cursor: pointer;
   background-color: var(--search-bg);
 
@@ -59,27 +57,10 @@
   &:focus {
     outline: none;
   }
-
-  @media (min-width: 767px) {
-    margin: 0 5px;
-    font-size: 1.25rem;
-    margin: 0 20px;
-  }
 }
 
 .error {
-  position: absolute;
-  right: 50%;
-  bottom: 5px;
-  color: var(--error-color);
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 700;
-
-  @media (min-width: 767px) {
-    right: 120px;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: unset;
+  &::placeholder {
+    color: var(--error-color);
   }
 }
