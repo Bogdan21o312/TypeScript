@@ -13,15 +13,19 @@
 }
 
 .userTitle {
+  display: flex;
+  &NameLogin {
+  }
   h2 {
-    @include adaptiveValue("font-size", 40, 30);
+    @include adaptiveValue("font-size", 40, 20);
     font-weight: 700;
     color: var(--utitle-color);
+    @include adaptiveValue("margin-bottom", 30, 10);
   }
 
   h3 {
     color: var(--main-color);
-    @include adaptiveValue("font-size", 30, 20);
+    @include adaptiveValue("font-size", 25, 18);
 
     &::before {
       content: '@';
@@ -29,19 +33,13 @@
   }
 
   span {
+    margin-left: auto;
     color: var(--ujoined-color);
-    @include adaptiveValue("font-size", 30, 20);
+    @include adaptiveValue("font-size", 30, 18);
     @include adaptiveValue("margin-top", 10, 5);
 
     &::before {
       content: 'Joined ';
     }
-  }
-
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
-    gap: rem(10);
   }
 }

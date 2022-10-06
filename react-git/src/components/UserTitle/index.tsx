@@ -1,4 +1,4 @@
-import styles from './UserTitle.module.scss';
+import classes from './UserTitle.module.scss';
 import {LocalGitHubUser} from "../../@types/user";
 
 interface UserTitleProps extends Pick<LocalGitHubUser,
@@ -15,9 +15,11 @@ const UserTitle = ({created_at, login, name}: UserTitleProps) => {
     const joinedDate = localDate.format(new Date(created_at))
 
     return (
-        <div className={styles.userTitle}>
-            <h2>{name}</h2>
-            <h3>{login}</h3>
+        <div className={classes.userTitle}>
+            <div className={classes.userTitleNameLogin}>
+                <h2>{name}</h2>
+                <h3>{login}</h3>
+            </div>
             <span>{joinedDate}</span>
         </div>
     );
