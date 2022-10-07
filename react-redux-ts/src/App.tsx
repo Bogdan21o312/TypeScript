@@ -5,11 +5,11 @@ import TodoList from "./components/TodoList";
 function App() {
     return (
         <div>
-            <UserList/>
-            <br/>
-            <hr/>
-            <br/>
-            <TodoList/>
+            <div style={{ display: "flex" }}>
+                <UserList/>
+                <hr/>
+                <TodoList/>
+            </div>
         </div>
     );
 }

@@ -19,8 +19,30 @@ const UserList: FC = () => {
 
     return (
         <div>
-       љ     {users.map((user, index) =>
-                <div key={index}>{user.name}</div>
+            {users.map((user, index) =>
+                <div
+                    style={{border: "1px solid red", margin: 20, padding: 10}}
+                    key={index}>
+                    <span>{user.id}  </span>
+                    <span>{user.name}</span>
+                    <div>{user.username}</div>
+                    <div>{user.email}</div>
+                    <br/>
+                    <div>{user.address.suite}</div>
+                    <div>{user.address.city}</div>
+                    <div>{user.address.zipcode}</div>
+                    <br/>
+                    <div>{user.address.geo.lat}</div>
+                    <div>{user.address.geo.lng}</div>
+                    <br/>
+                    <br/>
+                    <div>{user.phone}</div>
+                    <div>{user.website}</div>
+                    <br/>
+                    <div>{user.company.name}</div>
+                    <div>{user.company.catchPhrase}</div>
+                    <div>{user.company.bs}</div>
+                </div>
             )}
         </div>
     );
