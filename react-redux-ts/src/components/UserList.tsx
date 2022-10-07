@@ -19,7 +19,7 @@ const UserList: FC = () => {
 
     return (
         <div>
-            {users.map((user, index) =>
+       љ     {users.map((user, index) =>
                 <div key={index}>{user.name}</div>
             )}
         </div>
