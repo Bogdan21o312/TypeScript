@@ -20,7 +20,9 @@ const TodoList: FC = () => {
     return (
         <div>
             {todos.map(todo =>
-                <div key={todo.id}>{todo.id} - {todo.title}</div>
+                <div key={todo.id}>
+                    <div>{todo.id} - {todo.title}</div>
+                </div>
             )}
             <div
                 style={{display: 'flex'}}>
@@ -28,7 +30,7 @@ const TodoList: FC = () => {
                     <div
                         key={p}
                         onClick={() => setTodoPage(p)}
-                        style={{border:p === page ? '2px solid green' : '1px solid gray', padding: 10}}
+                        style={{border: p === page ? '2px solid green' : '1px solid gray', padding: 10}}
                     >
                         {p}
                     </div>
