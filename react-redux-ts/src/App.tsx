@@ -6,7 +6,9 @@ function App() {
     return (
         <div>
             <UserList/>
+            <br/>
             <hr/>
+            <br/>
             <TodoList/>
         </div>
     );
