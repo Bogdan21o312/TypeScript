@@ -1,5 +1,28 @@
+interface User {
+    id: number,
+    name: string,
+    username: string,
+    email: string,
+    address: {
+        suite: string,
+        city: string,
+        zipcode: string | number,
+        geo: {
+            lat: string | number,
+            lng: string | number,
+        }
+    }
+    phone: number | string,
+    website: string,
+    company: {
+        name: string,
+        catchPhrase: string,
+        bs: string,
+    }
+}
+
 export interface UserState {
-    users: any[],
+    users: User[],
     loading: boolean,
     error: null | string
 }
