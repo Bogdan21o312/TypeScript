@@ -14,14 +14,17 @@ const PostItem: FC<PostItemProps> = ({post, remove, update}) => {
     }
 
     const handleUpdate = (event: React.MouseEvent) => {
-        const title = prompt() || ""
+        const title = prompt() || "lsmdla"
         update({...post, title})
     }
 
     return (
-        <div onClick={handleUpdate} className="post">
+        <div className="post">
             {post.id}. {post.title}
             <button onClick={handleRemove}>Delete</button>
+            <div>
+                <input onClick={handleUpdate} type="text" value={post.title}/>
+            </div>
         </div>
     );
 };
